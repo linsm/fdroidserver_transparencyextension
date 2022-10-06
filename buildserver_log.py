@@ -5,10 +5,6 @@ Licensed under the EUPL, Version 1.2.
   
 You may obtain a copy of the Licence at: 
 https://joinup.ec.europa.eu/collection/eupl/eupl-text-eupl-12
-
-This program is distributed in the hope that it will be useful,
-but WITHOUT ANY WARRANTY; without even the implied warranty of
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 """
 
 def main():
@@ -20,7 +16,7 @@ def main():
                         default="http://IP_REST_API:PORT/",
                         help=_("Path to the the REST API of the personality"))
     parser.add_argument("--appid",
-                        default="at.jku.ins.sampleapp",
+                        default="com.company.appid",
                         help=_("App ID"))
     parser.add_argument("--version",
                         default="1",
