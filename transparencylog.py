@@ -55,10 +55,10 @@ def main():
             sha256_hash.update(blk)
     print(sha256_hash.hexdigest())
 
-    createlogurl = options.personalityaddress + 'Log/AddLogEntry?treeId=' +options.treeid
+    createlogurl = options.personalityaddress + 'LogBuilder/AddLogEntry?treeId=' +options.treeid
     logentry = {"applicationId":options.appid,"version":options.version,"signatureData":sha256_hash.hexdigest()}
     
-    createloginurl = options.personalityaddress + 'Login/Login'
+    createloginurl = options.personalityaddress + 'Login/RequestAccessToken'
     logincredentials = {"username": "buildserver", "password":"ENTER_PASSWORD"}
     loginresponse = requests.post(createloginurl,json=logincredentials,verify='PATH_TO_CERTIFICATE')
     #print(loginresponse.json())
