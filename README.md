@@ -29,3 +29,11 @@ The credentials should have been defined in the docker configuration of the pers
 ### TLS Certificate
 
 In case you are using self-signed TLS certificates, it is neccessary to upload the certificate to the F-Droid Build Server and set it's path in the `transparencylog.py` file. 
+
+## LICENSE
+
+Licensed under the EUPL, Version 1.2 or – as soon they will be approved by
+the European Commission - subsequent versions of the EUPL (the "Licence").
+You may not use this work except in compliance with the Licence.
+
+**License**: [European Union Public License v1.2](https://joinup.ec.europa.eu/software/page/eupl)
